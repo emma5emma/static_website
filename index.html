@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Gym Life</title>
+  <link rel="stylesheet" href="cssexo3.css">
+</head>
+<body>
+  <h1>Welcome to Gym Life</h1>
+  <p>Are you ready to achieve your fitness goals? Gym Life is here to inspire you with a passion for exercise and healthy living.</p>
+  
+  <h2>About Gym Life</h2>
+  <p>Gym Life is all about embracing a healthier lifestyle through consistent workouts, proper nutrition, and motivation to push your limits.</p>
+
+  <h2>Our Facilities</h2>
+  <img src="gym.jpeg" alt="Gym Equipment" width="300">
+  <p>Our state-of-the-art gym includes equipment for all your workout needs, from cardio machines to weightlifting stations.</p>
+
+  <h2>Useful Resources</h2>
+  <p>Check out these links to enhance your fitness journey:</p>
+  <ul>
+    <li><a href="https://www.bodybuilding.com" target="_blank">Bodybuilding Tips</a></li>
+    <li><a href="https://www.fitnessblender.com" target="_blank">Workout Plans</a></li>
+    <li><a href="https://www.healthline.com/nutrition" target="_blank">Healthy Eating</a></li>
+  </ul>
+
+  <h2>Get Motivated</h2>
+  <p id="motivation">Click the button below for some fitness inspiration!</p>
+  <button onclick="showMotivation()">Get Motivated</button>
+
+  <script>
+    function showMotivation() {
+      const messages = [
+        
+        "Your only limit is you.",
+        "Sweat, smile, and repeat!",
+        "Strong is the new beautiful.",
+        "Fitness is not a destination, it’s a way of life."
+      ];
+      const randomIndex = Math.floor(Math.random() * messages.length);
+      document.getElementById("motivation").innerText = messages[randomIndex];
+    }
+  </script>
+</body>
+</html>
+
